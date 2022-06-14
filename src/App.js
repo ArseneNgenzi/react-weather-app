@@ -17,9 +17,8 @@ function App() {
         .then(data => {
           setWeather(data)
           setQuery('')
-          console.log(data)
         })
-      }
+      } else return
   }
 
 

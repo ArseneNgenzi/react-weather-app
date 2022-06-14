@@ -11,12 +11,14 @@ body {
 .app {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
-  background-position: bottom;
+  background-position: 50%;
   transition: 0.4s ease-out;
 }
 
 .app.warm {
   background-image: url('./assets/warm-bg.jpg');
+  background-position: 50%;
+  background-size: cover;
 }
 
 main {
@@ -31,6 +33,7 @@ main {
 }
 
 .search-box .search-bar {
+  font-size: 1.2rem;
   display: block;
   width: 100%;
   border: 0;
@@ -45,6 +48,14 @@ main {
 
 .search-box .search-bar:focus {
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (min-width: 768px) {
+  .search-box {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .location-box .location {
